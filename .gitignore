@@ -21,7 +21,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-traget/
+traget*
 .metadata
 bin/
 tmp/
@@ -34,7 +34,8 @@ local.properties
 .loadpath
 .recommenders
 .settings/
-
+.classpath
+.project
 # External tool builders
 .externalToolBuilders/
 
