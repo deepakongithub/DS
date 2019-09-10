@@ -1,0 +1,19 @@
+package com.deepak.datastructure;
+
+public class Stack {
+
+	
+	private int[] stack;
+	private int top;
+	private int size;
+	
+	
+	
+	public Stack(int size) {
+		super();
+		this.size = size;
+	}
+	
+	
+	
+ }

@@ -1,0 +1,17 @@
+package com.deepak.datastructure.stack;
+
+/**
+ * Hello world!
+ *
+ */
+public class StackApp 
+{
+    public static void main( String[] args )
+    {
+    	
+    	Stack mystack = new Stack();
+    	
+    	System.out.println(mystack.isEmpty());
+    	
+     }
+}

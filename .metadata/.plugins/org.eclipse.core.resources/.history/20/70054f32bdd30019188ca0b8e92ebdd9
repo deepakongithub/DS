@@ -1,0 +1,30 @@
+package com.deepak.datastructure;
+
+public class Stack {
+
+	
+	private int[] stack;
+	private int top;
+	private int size;
+	
+	
+	
+	public Stack() {
+		super();
+		this.top=-1;
+		this.size = 50;
+		this.stack = new int[this.size];
+		
+	}
+	
+	public Stack(int size) {
+		super();
+		this.top=-1;
+		this.size = size;
+		this.stack = new int[this.size];
+		
+	}
+	
+	
+	
+ }
