@@ -9,7 +9,7 @@ public class StackApp
     public static void main( String[] args )
     {
     	
-    	Stack mystack = new Stack();
+    	Stack<Double> mystack = new Stack<Double>();
     	
     	System.out.println("is empty"+mystack.isEmpty());
     	System.out.println("is full"+mystack.isFull());
@@ -17,7 +17,7 @@ public class StackApp
     	
     	for (int i = 0; i < mystack.getSize(); i++) {
 			
-    		mystack.push(i+10);
+    		mystack.push(Math.random());
 			
 		}
     	System.out.println("is empty"+mystack.isEmpty());
@@ -29,22 +29,18 @@ public class StackApp
     		try {
 				System.out.println(mystack.pop());
 			} catch (IndexOutOfBoundsException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+ 				e.printStackTrace();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+ 				e.printStackTrace();
 			}
 			
 		}
     	try {
 			mystack.pop();
 		} catch (IndexOutOfBoundsException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+ 			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+ 			e.printStackTrace();
 		}
     	System.out.println("is empty"+mystack.isEmpty());
     	System.out.println("is full"+mystack.isFull());

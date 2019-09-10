@@ -1,32 +1,34 @@
 package com.deepak.datastructure.stack;
 
-public class Stack {
+public class Stack<K> {
 
 	
-	private int[] stack;
+	private K[] stack;
 	private int top;
 	private int size;
 	
 	
 	
+	@SuppressWarnings("unchecked")
 	public Stack() {
 		super();
 		this.top=-1;
 		this.size = 50;
-		this.stack = new int[this.size];
+		this.stack = (K[]) new Object[this.size];
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public Stack(int size) {
 		super();
 		this.top=-1;
 		this.size = size;
-		this.stack = new int[this.size];
+		this.stack =  (K[]) new Object[this.size];
 		
 	}
 
 	
-	public boolean push(int item) {
+	public boolean push(K item) {
 		if(!isFull()) {
 			this.top++;
 			this.stack[this.top]=item;
@@ -36,7 +38,7 @@ public class Stack {
 		return false;
 	}
 	
-	public int pop() throws IndexOutOfBoundsException , Exception{
+	public K pop() throws IndexOutOfBoundsException , Exception{
 		
 		return this.stack[this.top--];
 	}
@@ -54,7 +56,7 @@ public class Stack {
 
 	}
 
-	public int[] getStack() {
+	public K[] getStack() {
 		return stack;
 	}
 
